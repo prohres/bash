@@ -20,6 +20,6 @@ for((i=1; i<=$file_numb; i++)); do
 	echo "" >> file$i
 done
 
-# Find the biggest file inside this folder
+# Find the largest file within this folder
 find $full_path -type f -printf '%s %p\n' | sort -nr | head -1
 
